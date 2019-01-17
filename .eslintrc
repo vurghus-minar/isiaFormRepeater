@@ -1,0 +1,12 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "arrow-body-style": 0,
+    "no-underscore-dangle": 0,
+    "radix": 0,
+    "semi": [2, "never"],
+    "handle-callback-err": 0,
+    "no-undef": 0,
+    "no-debugger": 0
+  }
+}
