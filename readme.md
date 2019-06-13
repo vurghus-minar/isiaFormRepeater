@@ -1,5 +1,7 @@
 # isiaFormRepeater
 
+Check out the [**demo**](https://codepen.io/vurghusm/pen/zVGjyr) on Codepen: [https://codepen.io/vurghusm/pen/zVGjyr](https://codepen.io/vurghusm/pen/zVGjyr)
+
 ### About
 
 isiaFormRepeater is simple and lightweight jquery form repeater plugin.
