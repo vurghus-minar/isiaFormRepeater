@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.7",
     "del": "3.0.0",
     "es6-promise": "4.2.4",
     "gh-pages": "^2.0.0",
@@ -19,7 +19,7 @@
     "gulp-autoprefixer": "5.0.0",
     "gulp-clean-css": "3.9.4",
     "gulp-concat": "2.6.1",
-    "gulp-connect": "5.5.0",
+    "gulp-connect": "5.7.0",
     "gulp-csscomb": "3.0.8",
     "gulp-merge-media-queries": "0.2.1",
     "gulp-plumber": "1.2.0",
@@ -29,5 +29,9 @@
     "gulp-terser": "1.0.1",
     "portscanner": "^2.2.0",
     "pug": "2.0.3"
+  },
+  "peerDependencies": {
+    "fstream": ">=1.0.12",
+    "axios": ">=0.18.1"
   }
 }
