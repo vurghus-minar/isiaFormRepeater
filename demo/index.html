@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+    <link rel="stylesheet" href="css/isia-form-repeater.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+
+    <!--  
+
+/* ========= Fork it on GitHub ========= */
+/*
+https://github.com/vurghus-minar/isiaFormRepeater
+*/
+
+-->
+    <div id="page">
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend>Buttons use Pure CSS</legend>
+                <div class="isiaFormRepeater repeat-section" id="test" data-field-id="test_field_id"
+                    data-items-index-array="[1]">
+                    <div class="repeat-items">
+                        <div class="repeat-item" data-field-index="1">
+
+                            <label>Cars</label>
+                            <select class="repeat-el" name="test_field_id[1][test_sub1]">
+                                <option value="" disabled selected>Select your car</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                            <textarea class="repeat-el" name="test_field_id[1][test_sub2]">
+
+              </textarea>
+                            <label for="option-one" class="pure-checkbox">
+                                <input class="repeat-el" name="test_field_id[1][test_sub3]" type="checkbox" value="">
+                                Here's option one.
+                            </label>
+
+                            <label for="option-two" class="pure-radio">
+                                <input class="repeat-el" name="test_field_id[1][test_sub4]" type="radio" value="option1"
+                                    checked>
+                                Here's a radio button. You can choose this one..
+                            </label>
+
+                            <label for="option-three" class="pure-radio">
+                                <input class="repeat-el" name="test_field_id[1][test_sub4]" type="radio"
+                                    value="option2">
+                                ..Or this one!
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Buttons do not use Pure CSS</legend>
+                <div class="isiaFormRepeater repeat-section" id="test2" data-field-id="test2_field_id"
+                    data-items-index-array="[1]">
+                    <div class="repeat-items">
+                        <div class="repeat-item" data-field-index="1">
+                            <label>Name</label>
+                            <input type="text" class="repeat-el" id="test2_field_id[test_sub1][1]"
+                                name="test2_field_id[test_sub1][1]">
+                            <label>Email</label>
+                            <input type="email" class="repeat-el" id="test2_field_id[test_sub2][1]"
+                                name="test2_field_id[test_sub2][1]">
+
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="js/isia-form-repeater.min.js"></script>
+    <script src="js/demo.js"></script>
+
+</body>
+
+</html>
