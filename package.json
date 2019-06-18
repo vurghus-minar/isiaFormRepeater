@@ -1,6 +1,6 @@
 {
   "name": "isia-form-repeater",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "isiaFormRepeater is simple and lightweight jquery form repeater plugin",
   "scripts": {
     "deploy": "gh-pages -d demo/public"

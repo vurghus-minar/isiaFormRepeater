@@ -11,7 +11,6 @@ var concat = require('gulp-concat');
 
 // livereload
 var browserSync = require('browser-sync').create();
-var reload      = browserSync.reload;
 var portscanner = require('portscanner');
 var liveServerPortArray = [3000, 3033, 4000, 5500, 8880, 10000, 9900];
 
@@ -30,7 +29,7 @@ gulp.task('sass',function(){
     gulp.src(['src/sass/**/*.scss'])
         .pipe(plumber({
             handleError: function (err) {
-                console.log(err);
+                console.log(err); // eslint-disable-line no-console
                 this.emit('end');
             }
         }))
@@ -38,7 +37,7 @@ gulp.task('sass',function(){
         .pipe(autoPrefixer())
         .pipe(cssComb())
         .pipe(cmq({log:true}))
-        .pipe(concat({path:'isia-form-repeater.css', stat: { mode: 0666 }}))
+        .pipe(concat({path:'isia-form-repeater.css', stat: { mode: 0666 }})) // eslint-disable-line no-octal
         .pipe(gulp.dest('dist'))
         .pipe(rename({
             suffix: '.min'
@@ -52,7 +51,7 @@ gulp.task('js',function(){
     gulp.src(['src/js/**/*.js'])
         .pipe(plumber({
             handleError: function (err) {
-                console.log(err);
+                console.log(err); // eslint-disable-line no-console
                 this.emit('end');
             }
         }))

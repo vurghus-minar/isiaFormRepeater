@@ -1,4 +1,4 @@
-(function ($, window, document, undefined) {
+(function ($, window, document, undefined) { // eslint-disable-line
 
     'use strict';
 
@@ -160,4 +160,4 @@
         });
     };
 
-}( jQuery, window, document ));
+}( jQuery, window, document )); // eslint-disable-line
