@@ -125,7 +125,7 @@
         },
         removeItem(el, removeEl, itemsIndexArray){
             $(el + ' .repeat-item').on('click', removeEl, function(event) {
-                event.preventDefault();
+                //event.preventDefault();
                 if(!event.target.hasAttribute('data-repeat-remove-btn')){
                     event.stopPropagation();
                 }else{
